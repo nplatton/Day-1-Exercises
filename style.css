@@ -35,3 +35,36 @@ body {
     margin-left: 30px;
     font-family: 'Nunito', sans-serif;
   }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(238, 154, 59);
+    font-size: 40px;
+  }
+  
+  #relative {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+  }
+  
+  #wee {
+    position: absolute;
+    bottom: 40px;
+    right: -300px;
+    font-size: 30px;
+    animation-name: wee-move;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.5,0.5,0.5,0.5);
+  }
+  
+  @keyframes wee-move {
+    100% {
+      right: 100%;
+    }
+  }
